@@ -26,11 +26,11 @@ insert into tb_produtos (nome,categoria,marca,quantidade,preco) values ("Micro-o
 insert into tb_produtos (nome,categoria,marca,quantidade,preco) values ("Playstation 4","Games","Sony", 1,2599);
 insert into tb_produtos (nome,categoria,marca,quantidade,preco) values ("controle Playstation 4 ","Games","Sony", 2,269);
 
- -- Seleciona todos os funcionarios que possuem o salario maior que 2000
+ -- Seleciona todos os produtos que possuem o preco maior que 500
 select * from tb_produtos where preco>500;
 
- -- Seleciona todos os funcionarios que possuem o salario menor que 2000
+ -- Seleciona todos os produtos que possuem o preco menor que 500
 select * from tb_produtos where preco<500;
 
--- atualiza o salario da funcionaria Maria de 6000 para 7200
+-- atualiza o preco do produto com id=2
 update  tb_produtos set preco=420 where id = 2;
